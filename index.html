@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmic - Explore the Universe Daily</title>
+    <meta name="description"
+        content="Cosmic delivers NASA’s most stunning space images directly to your phone — explained in simple words with the help of AI.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&family=Playfair+Display:ital,wght@1,400&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+    <!-- Ionicons for simple, clean icons -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+
+<body>
+
+    <div class="star-field"></div>
+    <div class="star-field-2"></div>
+
+    <nav>
+        <div class="logo">Cosmic</div>
+        <button class="nav-cta" onclick="document.getElementById('waitlist').scrollIntoView({behavior: 'smooth'})">Get
+            Early Access</button>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content fade-in-up">
+            <h1>Discover the universe, <br>one breathtaking image every day.</h1>
+            <p>Cosmic delivers NASA’s most stunning space images directly to your phone — explained in simple words with
+                the help of AI.</p>
+            <button class="cta-button"
+                onclick="document.getElementById('waitlist').scrollIntoView({behavior: 'smooth'})">Join the
+                Waitlist</button>
+        </div>
+        <div class="hero-image-container fade-in-delayed">
+            <!-- Image will be set via CSS or an img tag if we want parallax -->
+        </div>
+    </header>
+
+    <section class="features" id="features">
+        <div class="feature-grid">
+            <div class="feature-card scroll-reveal">
+                <div class="icon-box"><ion-icon name="planet-outline"></ion-icon></div>
+                <h3>Daily NASA Images</h3>
+                <p>Wake up to a new view of the cosmos every morning.</p>
+            </div>
+            <div class="feature-card scroll-reveal">
+                <div class="icon-box"><ion-icon name="sparkles-outline"></ion-icon></div>
+                <h3>AI Explanations</h3>
+                <p>Complex astronomy made simple and easy to understand.</p>
+            </div>
+            <div class="feature-card scroll-reveal">
+                <div class="icon-box"><ion-icon name="bookmark-outline"></ion-icon></div>
+                <h3>Save Favorites</h3>
+                <p>Keep your personal collection of the universe's best moments.</p>
+            </div>
+            <div class="feature-card scroll-reveal">
+                <div class="icon-box"><ion-icon name="notifications-outline"></ion-icon></div>
+                <h3>Daily Reminders</h3>
+                <p>A gentle nudge to take a moment and look up.</p>
+            </div>
+            <div class="feature-card scroll-reveal">
+                <div class="icon-box"><ion-icon name="calendar-outline"></ion-icon></div>
+                <h3>Time Travel</h3>
+                <p>Jump to a random date or find a special moment in the universe's past.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="emotional scroll-reveal">
+        <div class="content-wrapper">
+            <h2>For the Stargazers</h2>
+            <p>This app is for curious minds, night-sky lovers, and anyone who feels small and inspired when looking at
+                the stars. Cosmic is designed to make space exploration a peaceful daily habit.</p>
+        </div>
+    </section>
+
+    <section class="waitlist" id="waitlist">
+        <div class="waitlist-container scroll-reveal">
+            <h2>Be the first to explore the universe with us.</h2>
+            <form id="waitlist-form" name="waitlist-form">
+                <div class="input-group">
+                    <input type="email" name="email" placeholder="Enter your email address" required>
+                    <button type="submit">Join the Waitlist</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>Built by an indie developer who <ion-icon name="heart"
+                style="color: #ff6b6b; vertical-align: middle;"></ion-icon> space and learning.</p>
+        <div class="socials">
+            <!-- Placeholder for social links if needed -->
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
